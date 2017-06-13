@@ -18,7 +18,7 @@ Code used:
     https://github.com/zserge/jsmn
 
 How to run it:
-   ./yazecminer.exe -l eu1-zcash.flypool.org -u {workername} -d 3
+   ./yazecminer
 
 Pools tested:
 - http://zcash.flypool.org
