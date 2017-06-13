@@ -1,11 +1,12 @@
 Linux平台下的Zcash挖矿软件.  
     
 使用      
-```shell   
+```shell
 git clone https://github.com/kEviN0H/yazecminer
 make   
 ./yazecminer  
-```  
+```
+
 
    
    
