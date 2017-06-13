@@ -29,11 +29,11 @@
 #define JSON_TOKENS_MAX		64
 #define TIME_STAT_PERIOD	15
 
-static char			pool_host[BUF_SIZE] = "127.0.0.1";
-static int			pool_port = 3333;
-static char			miner_name[BUF_SIZE] = "yazecminer";
+static char			pool_host[BUF_SIZE] = "zec-us.suprnova.cc";
+static int			pool_port = 2142;
+static char			miner_name[BUF_SIZE] = "kevin9h";
 static char			worker_name[BUF_SIZE] =
- 				    "t1PsxqaQ1o5PDTALJN2Fn8BxeBvcpQyqKwV";
+ 				    "t1VX82bjdMmGf32vBLWZ4ryF9svYtfTSVPY";
 static char			worker_pass[BUF_SIZE] = "x";
 static int			flag_bench = 0;
 static int			flag_debug = 0;
@@ -777,8 +777,8 @@ main (int argc, char **argv) {
 		sock_open ();
 	Log ("connected!");
 	send_subscribe ();
-	for (i = 0; !flag_new_job && i < 10; i++)
-		periodic (1000);
+	for (i = 0; !flag_new_job && i < 9000; i++)
+		periodic (100000);
 	if (!flag_new_job)
 		die ("no responses or jobs");
 
