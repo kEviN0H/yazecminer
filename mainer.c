@@ -104,7 +104,7 @@ die (char *str) {
 		str++;
 	}
 	printf ("%s, exiting\n", str);
-	return (1);
+	return ();
 }
 
 static void
@@ -558,7 +558,7 @@ periodic (int timeout) {
 		if (i < 0)
 			die ("!recv");
 		if (i == 0)
-			die ("zero recv, socket was closed?");*/
+			die ("zero recv, socket was closed?");
 		in_len += i;
 		if (in_len > BUF_SIZE)
 			die ("wtf");
