@@ -104,7 +104,7 @@ die (char *str) {
 		str++;
 	}
 	printf ("%s, exiting\n", str);
-	return ();
+	exit (1);
 }
 
 static void
